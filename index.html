@@ -38,10 +38,16 @@
 		}
 		a {
 			text-decoration: none;
-			color: #333;
+			color: #0f0f41;
 		}
-		a:hover {
-			text-decoration: underline;
+		#info a {
+			font-size: 14pt;
+		}
+		#info a:hover:after {
+			content: " <";
+		}
+		#info a:hover:before {
+			content: "> ";
 		}
 		</style>
 
@@ -53,6 +59,7 @@
 			<div id="info">
 				<p>The coolest agile software development conference in Finland!</p>
 				<p>May 15th - May 16th 2012</p>
+				<p><a href="https://docs.google.com/spreadsheet/viewform?formkey=dEwzUmxubXdYQ0VpT1pWRXNGRHl6dnc6MQ">Call for proposals</a></p>
 				<p><a href="mailto:info@turkuagileday.fi">info@turkuagileday.fi</a></p>
 			</div>
 		</div>
