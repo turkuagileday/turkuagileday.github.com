@@ -1,0 +1,65 @@
+<!doctype html><!-- simplified doctype works for all previous versions of HTML as well -->
+
+<!-- Paul Irish's technique for targeting IE, modified to only target IE6, applied to the html element instead of body -->
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"><![endif]-->
+<!--[if (gt IE 6)|!(IE)]><!--><html lang="en" class="no-js"><!--<![endif]-->
+
+	<head>
+		<!-- simplified character encoding -->
+		<meta charset="utf-8">
+
+		<title>Turku Agile Day</title>
+		<meta name="description" content="Easy HTML5 Template">
+		<meta name="author" content="">
+
+		<link rel="shortcut icon" href="favicon.png">
+		<link rel="apple-touch-icon" href="favicon.png">
+		
+		<style type="text/css">
+		@font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); }
+		@font-face { font-family: Delicious; font-weight: bold; src: url('Delicious-Bold.otf'); }
+		body {
+			font-family: Delicious, sans-serif;
+		}
+		#logo {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#info p {
+			color: #333;
+			font-size: 2em;
+			text-align: center;
+		}
+		#oldsite {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+		a {
+			text-decoration: none;
+			color: #333;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		</style>
+
+	</head>
+	
+	<body>
+		<div id="container">
+			<img id="logo" src="logo.png" />
+			<div id="info">
+				<p>The coolest agile software development conference in Finland!</p>
+				<p>May 15th - May 16th 2012</p>
+				<p><a href="mailto:info@turkuagileday.fi">info@turkuagileday.fi</a></p>
+			</div>
+		</div>
+		
+		<div id="oldsite">
+			<p><a href="http://foobar">Previous years &gt;&gt;</a></p>
+		</div>
+	</body>
+
+</html>
