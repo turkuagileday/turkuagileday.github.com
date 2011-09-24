@@ -1,72 +1,95 @@
-<!doctype html><!-- simplified doctype works for all previous versions of HTML as well -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Turku Agile Day</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-<!-- Paul Irish's technique for targeting IE, modified to only target IE6, applied to the html element instead of body -->
-<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"><![endif]-->
-<!--[if (gt IE 6)|!(IE)]><!--><html lang="en" class="no-js"><!--<![endif]-->
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-dropdown.js"></script>
 
-	<head>
-		<!-- simplified character encoding -->
-		<meta charset="utf-8">
+	<!-- Le styles -->
+	<link href="lib/bootstrap/bootstrap.css" rel="stylesheet">
+	<style type="text/css">
+	body {
+		padding-top: 60px;
+	}
+	</style>
 
-		<title>Turku Agile Day</title>
-		<meta name="description" content="Easy HTML5 Template">
-		<meta name="author" content="">
+	<!-- Le fav and touch icons -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+</head>
 
-		<link rel="shortcut icon" href="favicon.png">
-		<link rel="apple-touch-icon" href="favicon.png">
-		
-		<style type="text/css">
-		@font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); }
-		@font-face { font-family: Delicious; font-weight: bold; src: url('Delicious-Bold.otf'); }
-		body {
-			font-family: Delicious, sans-serif;
-		}
-		#logo {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		#info p {
-			color: #333;
-			font-size: 2em;
-			text-align: center;
-		}
-		#oldsite {
-			position: absolute;
-			top: 10px;
-			right: 10px;
-		}
-		a {
-			text-decoration: none;
-			color: #0f0f41;
-		}
-		#info a {
-			font-size: 14pt;
-		}
-		#info a:hover:after {
-			content: " <";
-		}
-		#info a:hover:before {
-			content: "> ";
-		}
-		</style>
+<body>
 
-	</head>
-	
-	<body>
-		<div id="container">
-			<img id="logo" src="logo.png" />
-			<div id="info">
-				<p>The coolest agile software development conference in Finland!</p>
-				<p>May 15th - May 16th 2012</p>
-				<p><a href="https://docs.google.com/spreadsheet/viewform?formkey=dEwzUmxubXdYQ0VpT1pWRXNGRHl6dnc6MQ">Call for proposals</a></p>
-				<p><a href="mailto:info@turkuagileday.fi">info@turkuagileday.fi</a></p>
+	<div class="topbar">
+		<div class="fill">
+			<div class="container">
+				<a class="brand" href="#">Turku Agile Day</a>
+				<ul class="nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Programme</a></li>
+					<li><a href="#contact">Speakers</a></li>
+					<li><a href="#contact">Register</a></li>
+				</ul>
+				<ul class="nav secondary-nav">
+					<li class="menu" data-dropdown="dropdown" >
+						<a href="#" class="menu">Past</a>
+						<ul class="menu-dropdown">
+							<li><a href="/past/2011.html">2011</a></li>
+							<li><a href="/past/2010.html">2010</a></li>
+							<li><a href="/past/2009.html">2009</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 		</div>
-		
-		<div id="oldsite">
-			<p><a href="http://foobar">Previous years &gt;&gt;</a></p>
-		</div>
-	</body>
+	</div>
 
+	<div class="container">
+
+		<!-- Main hero unit for a primary marketing message or call to action -->
+		<div class="hero-unit">
+			<img style="float: left; height: 200px; margin-right: 30px;" src="logo.png">
+			<h1>May 15th &amp; 16th, 2012</h1>
+			<p>The coziest agile software development conference in Finland!</p>
+			<p>Call for proposals open now!</p>
+			<p><a class="btn primary large">Propose a speech &raquo;</a></p>
+		</div>
+
+		<!-- Example row of columns -->
+		<div class="row">
+			<div class="span6">
+				<h2>News</h2>
+				<p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+				<p><a class="btn" href="#">View details &raquo;</a></p>
+			</div>
+			<div class="span5">
+				<h2>Twitter</h2>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				<p><a class="btn" href="#">View details &raquo;</a></p>
+			</div>
+			<div class="span5">
+				<h2>Sponsors</h2>
+				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+				<p><a class="btn" href="#">View details &raquo;</a></p>
+			</div>
+		</div>
+
+		<footer>
+			<p>&copy; Turku Agile Group 2011 &raquo; <a href="mailto:info@turkuagileday.fi">info@turkuagileday.fi</a></p>
+		</footer>
+
+	</div> <!-- /container -->
+
+</body>
 </html>
