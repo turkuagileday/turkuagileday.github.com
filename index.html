@@ -13,7 +13,7 @@ layout: default
 <!-- Example row of columns -->
 <div class="row">
 	<div class="span6">
-		<h2>News</h2>
+		<h2>News <img src="/icons/rss-32.png" style="height: 20px;"></h2>
 		{% for post in site.posts limit: 5 %}
 		<p class="news-block">
 			<a class="title" href="{{ post.url }}">{{ post.title }}</a> <span class="metadata">{{ post.date | date_to_string }} / {{ post.author }}</span>
@@ -25,9 +25,9 @@ layout: default
 		<p><a class="btn" href="archive.html">Archive &raquo;</a></p>
 	</div>
 	<div class="span5">
-		<h2>Twitter</h2>
-		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		<p><a class="btn" href="#">View details &raquo;</a></p>
+		<h2>Twitter <img src="/icons/twitter-32.png" style="height: 20px;"></h2>
+		<div id="tweet"><p class="ajax-loading">&nbsp;</p></div>
+		<p><a class="btn" href="http://twitter.com/#!/turkuagileday">Follow &raquo;</a></p>
 	</div>
 	<div class="span5">
 		<h2>Sponsors</h2>
@@ -35,3 +35,16 @@ layout: default
 		<p><a class="btn" href="mailto:info@turkuagileday.fi">Contact us &raquo;</a></p>
 	</div>
 </div>
+<script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js" type="text/javascript"></script>
+<script>
+$(function() {
+	getTwitters('tweet', { 
+	  id: 'turkuagileday', 
+	  count: 5, 
+	  enableLinks: true, 
+	  ignoreReplies: true, 
+	  clearContents: true,
+	  template: '<a class="time" href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">%time%</a><br />%text%'
+	});
+});
+</script>
