@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+<div class="row">
+	<div class="span12">
+		{{ content }}
+	</div>
+	<div class="span4">
+		{% for post in site.posts %}
+		<p class="news-block">
+			<a href="{{ post.url }}">{{ post.title }}</a> <span>{{ post.date | date_to_string }}</span>
+		</p>
+		{% endfor %}
+	</div>
+</div>
