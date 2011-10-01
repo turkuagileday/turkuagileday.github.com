@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+Talks - Turku Agile Day
+</title>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/media/css/reset.css" />
+    <link rel="stylesheet" href="/media/css/text.css" />
+    <link rel="stylesheet" href="/media/css/960.css" />
+
+    <link  href="//fonts.googleapis.com/css?family=Droid+Sans:regular,bold" rel="stylesheet" type="text/css" >
+
+    <link rel="stylesheet" href="/media/css/tad011.css">
+    <link rel="shortcut icon" href="/favicon2.png">
+
+
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header class="container_24">
+        <div class="grid_7">
+          <a href="/">
+            <img src="/media/layout_img/tad011_logo2.png" alt="Turku Agile Day 011"/></a>
+        </div>
+        <div class="grid_17">
+          <hgroup>
+            <h1>Turku Agile Day</h1>
+            <!--<h2>agile software development conference<br/><strong>March 16<sup>th</sup> &ndash; 17<sup>th</sup> 2011</strong></h2>-->
+          </hgroup>
+
+          
+          <nav class="corners10 glow-border">
+            <ul>
+              <li class="news"><a href="/"><span>News</span><br/>Latest buzz</a></li>
+              <li class="conference"><a href="/programme/"><span>Programme</span><br/>Schedule, Speakers, Venue</a></li>
+              <li class="past"><a href="/past/"><span>Past</span><br/>Previous years</a></li>
+              <li class="tad-sponsors"><a href="/sponsors/"><span>Sponsors</span><br/>Our supporters</a></li>
+              <li class="enroll"><a href="http://register.turkuagileday.fi/"><span>Register</span><br/>Enroll now!</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+        <div class="clear"></div>
+      </header>
+
+      <div id="content" class="container_24">
+        
+
+
+
+<section class="grid_24">
+  <nav class="sub corners10 glow-border" style="width: 60%;">
+    <ul>
+      
+      
+      <li>
+        <a href="/past/2010/"><span>2010</span></a>
+      </li>
+      
+      <li>
+        <a href="/past/2009/"><span>2009</span></a>
+      </li>
+      
+      <li>
+        <a href="/past/2011/"><span>2011</span></a>
+      </li>
+      
+    </ul>
+  </nav>
+</section>
+
+
+
+<section class="grid_24">
+<div class="odd">
+<h2><a name="pinocchio-on-becoming-a-lean-leader"></a><strong>KEYNOTE:</strong> Pinocchio: On Becoming a Lean Leader</h2>
+<p><em><a href="/conference/speakers/#portia-tung">Portia Tung</a> and <a href="/conference/speakers/#pascal-van-cauwenberghe">Pascal Van Cauwenberghe</a>, 9:40 Thu 18th March, Auditorium Alpha</em></p>
+<p>You&rsquo;re a mischievous wooden little boy who dreams of becoming a manager one day. In order to make your dreams come true, you must avoid being swallowed by Monstro the whale, and having to spend the rest of your life stewing in a jacuzzi of digestive juices, like the other managers. The satanic little voice in your head tells you everything will be ok, but your protruding nose knows otherwise.</p>
+<p>In this interactive keynote, you'll embark on an journey where you'll encounter two types of characters: the Baddies, such as Gideon and Foulfellow, who will try to lead you astray with temptations, and the Goodies, such as Gepetto, the Blue Fairy and Jiminy Cricket, who will help you find your way back to your goal.</p>
+<p>You'll get the chance to put some Lean leadership tools into practice and come up with 3 actions to take away to try out at the conference.</p>
+<p>Become Goal-Oriented</p>
+<ul>
+<li>Long-term Philosophy - Develop a purpose that is greater than a purely financial reward.</li>
+<li>Hansei (Relentless Reflection) and Kaizen (Continuous Improvement)                                                  
+<ul>
+<li>Do regular analysis to evaluate personal performance and invest in personal development through incremental improvements.</li>
+</ul>
+</li>
+</ul>
+<p>Work with Others to Achieve Common Goals</p>
+<ul>
+<li>Leadership Discipline - Set clear expectations for yourself and others and maintain process focus on a daily basis.</li>
+<li>Nemawashi (Decisions based on Consensus) - Make decisions slowly by consensus then implement decisions quickly</li>
+</ul>
+<p>Join us to acquire these Lean Leadership tools and give your story a Happy Ending with the help of talking animals.</p>
+</div>
+<div class="even">
+<h2><a name="how-to-sell-agile-to-my-manager"></a>How to sell agile to my manager?</h2>
+<p><em><a href="/conference/speakers/#marko-taipale">Marko Taipale</a>, 11:00 Thu 18th March, Auditorium Beta</em></p>
+<p>You might have heard the question "Ok, agile is cool but how do I sell it to my manager?" in various Agile conferences and dinners. In this talk I will tell you how to make the mafia offer that your manager can't refuse.</p>
+</div>
+<div class="odd">
+<h2><a name="flow-where-you-can-pull-where-you-must"></a>Flow where you can, pull where you must - a practitioners guide to Kanban</h2>
+<p><em><a href="/conference/speakers/#joakim-sunden">Joakim Sund&eacute;n</a>, 11:00 Thu 18th March, Auditorium Alpha<br /></em></p>
+<p>Kanban is a software development methodology that implements the pull and flow elements of lean thinking. It&rsquo;s an alternative to agile methods such as Scrum when you want to change the culture of an organisation in a lean/agile direction, or when the nature of work does not suit time-boxed iterations, e.g., maintenance. But it is also a tool that can enhance other methodologies through visualisation of the workflow to highlight problems, limiting work in progress to eliminate waste etc. I introduce Kanban from a practitioners point of view which let you get started with Kanban right away, regardless of what methodology you use today.</p>
+</div>
+<div class="even">
+<h2><a name="transformational-agile-testing-practices"></a>Transformational Agile Testing Practices: Lessons with Legacy</h2>
+<p><em><a href="/conference/speakers/#maaret-pyhajarvi">Maaret Pyh&auml;j&auml;rvi</a>, 11:55 Thu 18th March, Auditorium Beta</em></p>
+<p>Taking in agile when there's a past with non-agile poses its challenges, also to testing. In this presentation, I walk you through a personal reflection of testing practices introduced with agile in comparison to what I've seen in non-agile, yet iterative and incremental projects. The practices this presentation discusses are from non-ideal settings for agile methods: there's a product with a past, with many teams contributing to the system to be delivered and tested, and little test automation to start with.<br /> Yet full testing with agile teams should still happen, with release-ready, tested software available on regular basis. /p&gt;</p>
+</div>
+<div class="odd">
+<h2><a name="phronetic-leadership"></a>Phronetic Leadership - Or how to lead knowledge companies</h2>
+<p><em><a href="/conference/speakers/#ola-ellnestam">Ola Ellnestam</a>, 11:55 Thu 18th March, Auditorium Alpha</em></p>
+<p>n the world of software development, knowledge is king. The company that can create knowledge and harness the capabilities of their employees will ultimately dominate the market. In this talk you'll learn why there is a need to lead in a different way and how to lead knowledge workers.</p>
+</div>
+<div class="even">
+<h2><a name="timeboxed-thinking"></a>Timeboxed Thinking</h2>
+<p><em><em><a href="/conference/speakers/#portia-tung">Portia Tung</a> and <a href="/conference/speakers/#staffan-noteberg">Staffan Noteberg</a>, 14:00 Thu 18th March, Auditorium Beta</em></em></p>
+<p><em>We combine our Modal Thinking Model made up of 5 modes &ndash; Overview, Focus, Self-Inspect, Guilt-Free Play and Background Processing &ndash; with Timeboxing to turn our jumbled way of thinking into a simple discipline.</em></p>
+<p><em>The 5 modes of the <em>Modal Thinking Model</em> are:</em></p>
+<ul>
+<li><em><strong>Overview</strong> - Bigger Picture thinking: planning, sorting and prioritising</em></li>
+<li><em><strong>Focus</strong> - Focusing on only a single task</em></li>
+<li><em><strong>Self-Inspect</strong> - Reflecting and making adjustments</em></li>
+<li><em><strong>Guilt-Free Play</strong> - Taking a break to recharge</em></li>
+<li><em><strong>Background Processing</strong> - An asynchronous process not limited to a timebox</em></li>
+</ul>
+<p><em>Join us to learn how to apply Timeboxed Thinking as an individual to improve your daily personal effectiveness as well as getting more out of working in groups.</em></p>
+</div>
+<div class="odd">
+<h2><a name="agile-is-easy"></a>Agile is easy, it&rsquo;s making it work with your business that is hard</h2>
+<p><em><em><a href="/conference/speakers/#vasco-duarte">Vasco Duarte</a>, 14:00 Thu 18th March, Auditorium Alpha</em></em></p>
+<p><em>The Finnish Agile Community was among the early adopter communities in the world. That gives us a great insight into on how businesses adopt and take advantage of Agile SW Development, not just how to develop software using Agile SW Development ideas.</em></p>
+<p><em>In this talk I&rsquo;ll use two case studies as a basis to define a possible recipe for turning a legacy business into a highly adaptable Agile business. From the adoption in the software development organization to the inclusion of Agile principles and ideas at the management and strategic level of a company. This talk is an introduction to a longer format training class/workshop about Business Agility.</em></p>
+</div>
+<div class="even">
+<h2><a name="case-agile-usability"></a>Case: Agile Usability - Experiences in combining UI design and agile development</h2>
+<p><em><em><a href="/conference/speakers/#sami-ekblad">Sami Ekblad</a>, 14:50 Thu 18th March, Auditorium Beta</em></em></p>
+<p>Both agile development process and user-centered design aim for more customer value and they seem to share characteristics by better focusing on people. But how to really combine UI and interaction design into an agile framework?</p>
+<p>Simply designing the user interface and experience up-front and using short iterative development cycles in implementation does not work and better synchronization of UI design and agile system development is needed.</p>
+<p>To better understand how these two match, we take a look at a real-life development project that combined user-centered UI design into an iterative agile development framework.</p>
+</div>
+<div class="odd">
+<h2><a name="train-your-customer"></a>Train your customer</h2>
+<p><em><em><a href="/conference/speakers/#petri-heiramo">Petri Heiramo</a>, 11:00 Thu 18th March, Auditorium Alpha</em></em></p>
+One major challenge for Agile companies is getting their customer (or potential customers) to understand what Agile is and how it could benefit them. In this session, Petri will look at the benefits the customers could have, how these benefits could be communicated to the customer, how to train your customer and how to make them act like the PO's they should be. Training the customer should be one core responsibility of the ScrumMaster, but too many SM's forget that. Or don't know how to do it.</div>
+<div class="odd">
+<h2><strong>KEYNOTE:</strong> Talk</h2>
+<p><em><a href="/conference/speakers/#elisabeth-hendrickson">Elisabeth Hendrickson</a>, 15:50 Thu 18th March, Auditorium Alpha</em></p>
+<p><em>Sorry, we don't have the abstract yet, but it's coming!</em></p>
+</div>
+</section>
+<div class="clear"></div> 
+
+      </div>
+    </div>
+
+    <footer class="container_24">
+      <section id="contact-info" class="grid_8">
+        <h4>Contact information</h4>
+        <ul>
+          <li><a href="mailto:info@turkuagileday.fi">info@turkuagileday.fi</a></li>
+          <li><span>Aki Salmi, phone: +358 50 364 7187</span></li>
+          <li><span>Jyrki Pulliainen, phone: +358 40 570 2293</span></li>
+          <li><a href="/staff/">Who's behind Turku Agile Day?</a></li>
+        </ul>
+      </section>
+
+      <section id="utulogo" class="grid_8 push_1">
+        <a href="http://www.utu.fi/"><img src="/media/img/utu.png" alt="University of Turku"></a>
+      </section>
+
+      <section id="organizers" class="grid_7 push_1">
+        <h4>Organizers</h4>
+        <ul>
+          <li><a href="http://www.it.utu.fi/">Department of Information Technology</a></li>
+          <li><a href="http://www.asteriski.fi/">Asteriski ry</a></li>
+          <li><a href="http://www.digit.fi/">Digit ry</a></li>
+        </ul>
+      </section>
+      <div class="clear"></div>
+    </footer>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11098970-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
