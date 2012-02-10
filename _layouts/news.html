@@ -1,16 +1,19 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<div class="row">
-	<div class="span12">
-		{{ content }}
-	</div>
-	<div class="span4">
-		{% for post in site.posts %}
-		<p class="news-block">
-			<a href="{{ post.url }}">{{ post.title }}</a> <span class="metadata">{{ post.date | date_to_string }}</span>
-		</p>
-		{% endfor %}
-	</div>
-</div>
+<article class="column two-thirds">
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+</article>
+
+<aside class="column third">
+  <h2>Archive</h2>
+  {% for post in site.posts %}
+    <article class="news">
+      <hgroup>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="writer">{{ post.date | date_to_string }} / {{ post.author }}</p>
+      </hgroup>
+	  </article>
+	{% endfor %}
+</aside>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>{% if page.title %}{{ page.title }} | {% endif %}Turku Agile Day 2012</title>
+
+	<meta name="author" content="Turku Agile Group">  
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}Turku Agile Day 2012" />
+  <meta property="og:site_name" content="Turku Agile Day 2012" />
+  <meta property="og:image" content="http://www.turkuagileday.fi/apple-touch-icon-precomposed.png" />
+  
+	<meta name="viewport" content="width=1024,maximum-scale=1">
+  
+  <link href='http://fonts.googleapis.com/css?family=Kreon:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/css/style.css">
+
+	<script src="/js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+<body class="{{ page.classes }}">
+
+<div id="container">
+	<header id="branding">
+	  <div class="inner">
+	    <a href="/" id="logo"><img src="/img/tad012.png" alt="Turku Agile Day 2012 -logo"></a>
+	  </div>
+    <nav id="navigation">
+      <div class="inner">
+        <a href="/" id="logo-mini"><img src="/img/tad012_mini.png" alt="Turku Agile Day 2012 -logo"></a>
+        {% include navigation.html %}
+      </div>
+    </nav>
+	</header>

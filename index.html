@@ -1,50 +1,164 @@
 ---
 layout: default
+classes: front
 ---
-<!-- Main hero unit for a primary marketing message or call to action -->
-<div class="hero-unit">
-	<img style="float: left; height: 200px; margin-right: 30px;" src="logo.png">
-	<h1>May 15th &amp; 16th, 2012</h1>
-	<p>The coziest agile software development conference in Finland!</p>
-	<p>Call for proposals open now!</p>
-	<p><a class="btn primary large" href="https://docs.google.com/spreadsheet/viewform?formkey=dEwzUmxubXdYQ0VpT1pWRXNGRHl6dnc6MQ">Propose a speech &raquo;</a></p>
-</div>
+<h1 id="punchline"><strong>Turku Agile Day</strong>, the coziest agile software<br> development conference, will be back in May 2012</h1>
+<section class="boxes clearfix">
+  <article class="column third">
+    <hgroup>
+      <p class="preheading">with</p>
+      <h2><span class="count">8</span> workshops <br><span>on May 15<sup>th</sup></span></h2>
+    </hgroup>
+    <p>Choose a concrete technical practice (TDD, BDD or Git) or a topic helping us to change the world we are living in. The workshops answer you questions about lean startup, creating product vision or tools for an agile liftoff.</p>
+    <p class="call-to-action"><a href="/topics/">Learn more</a></p>
+  </article>
+  
+  <article class="column third">
+    <hgroup>
+      <p class="preheading">and</p>
+      <h2><span class="count">14</span> talks <br><span>on May 16<sup>th</sup></span></h2>
+    </hgroup>
+    <p>Keynotes by Lisa Crispin and Linda Rising encompasses four tracks of topics ranging from Finnish case studies to testing practices and basics of why agile works. If you enjoy coffee and discussion, you might choose the conversational track located in the cozy lounge.</p>
+    <p class="call-to-action"><a href="/topics/#talks">Learn more</a></p>
+  </article>
+  
+  <article class="column third">
+    <hgroup>
+      <p class="preheading">plus</p>
+      <h2><span class="count">1</span> competition <br><span>never seen before</span></h2>
+    </hgroup>
+    <p>Come and join the testing fun with Lisa Crispin and Elisabeth Hendrickson! A full day of intensive testing, learning and fun. Watch the contestants to do some tricky testing challenges. enjoy the supportive judging and more. And you get to choose the winner.</p>
+    <p class="call-to-action"><a href="/topics/testing-with-the-stars/">Test with the stars</a></p>
+  </article>
+</section>
 
-<!-- Example row of columns -->
-<div class="row">
-	<div class="span6">
-		<h2>News <img src="/icons/rss-32.png" style="height: 20px;"></h2>
-		{% for post in site.posts limit: 5 %}
-		<p class="news-block">
-			<a class="title" href="{{ post.url }}">{{ post.title }}</a> <span class="metadata">{{ post.date | date_to_string }} / {{ post.author }}</span>
-			<p>
-				{{ post.content | truncate: 400 }}
-			</p>
-		</p>
+<section class="boxes clearfix" id="speakers">
+  <article>
+    <hgroup class="column third">
+      <p class="preheading">starring</p>
+      <h2><span class="count">19</span> speakers <br><span> top class</span></h2>
+    </hgroup>
+    
+    <figure class="speaker first">
+      <a href="/speakers/#linda-rising">
+        <img src="/speakers/faces/linda_rising.jpg">
+        <figcaption>Linda Rising</figcaption>
+      </a>
+    </figure>
+    <figure class="speaker">
+      <a href="/speakers/#lisa-crispin">
+        <img src="/speakers/faces/lisa_crispin.jpg">
+        <figcaption>Lisa Crispin</figcaption>
+      </a>
+    </figure>
+    <figure class="speaker">
+      <a href="/speakers/#elisabeth-hendrickson">
+        <img src="/speakers/faces/elisabeth_hendrickson.jpg">
+        <figcaption>Elisabeth Hendrickson</figcaption>
+      </a>
+    </figure>
+    <figure class="speaker">
+      <a href="/speakers/#marcus-ahnve">
+        <img src="/speakers/faces/marcus_ahnve.jpg">
+        <figcaption>Marcus Ahnve</figcaption>
+      </a>
+    </figure>
+    <figure class="speaker">
+      <a href="/speakers/#daniel-brolund">
+        <img src="/speakers/faces/daniel_brolund.jpg">
+        <figcaption>Daniel Brolund</figcaption>
+      </a>
+    </figure>
+    <figure class="speaker">
+      <a href="/speakers/#vasco-duarte">
+        <img src="/speakers/faces/vasco_duarte.jpg">
+        <figcaption>Vasco Duarte</figcaption>
+      </a>
+    </figure>
+    
+          
+  <p class="call-to-action"><a href="/speakers/">Meet them all</a></p>
+
+  </article>
+</section>
+
+<section id="news" class="boxes clearfix">
+  <div class="column half">
+    <hgroup>
+      <h2>News<br>
+      <span>the latest buzz</span></h2>
+    </hgroup>
+    
+    {% for post in site.posts limit: 1 %}
+      <article class="news">
+        <hgroup>
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="writer">{{ post.date | date_to_string }} / {{ post.author }}</p>
+        </hgroup>
+        {{ post.content | truncate: 300 }}
+        <p class="call-to-action"><a href="{{ post.url }}">Read full article</a></p>
+		  </article>
 		{% endfor %}
-		<p><a class="btn" href="archive.html">Archive &raquo;</a></p>
-	</div>
-	<div class="span5">
-		<h2>Twitter <img src="/icons/twitter-32.png" style="height: 20px;"></h2>
-		<div id="tweet"><p class="ajax-loading">&nbsp;</p></div>
-		<p><a class="btn" href="http://twitter.com/#!/turkuagileday">Follow &raquo;</a></p>
-	</div>
-	<div class="span5">
-		<h2>Sponsors</h2>
-		<p>Want to sponsor our event and get some glory?</p>
-		<p><a class="btn" href="mailto:info@turkuagileday.fi">Contact us &raquo;</a></p>
-	</div>
-</div>
+		
+    {% for post in site.posts limit: 3 offset: 1 %}
+      <article class="news">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="writer">{{ post.date | date_to_string }} / {{ post.author }}</p>
+		  </article>
+		{% endfor %}
+    
+    <p class="call-to-action"><a href="/archive/">View archive</a></p>
+  </div>
+  
+  <div class="column half">
+    <hgroup>
+      <h2>Tweets<br>
+      <span>hear what the bird says</span></h2>
+    </hgroup>
+    
+    <div id="tweets"><p style="text-align:center;"><img src="/img/ajax-loader.gif"></p></div>
+    <p class="call-to-action"><a href="http://twitter.com/#!/turkuagileday">Follow us</a></p>
+  </div>
+  
+</section>
+<section id="sponsors">
+  <h2>Sponsors</h2>
+  
+  <ul id="sponsor-groups">
+    <li class="active">
+      <h3>Gold sponsors</h3>
+      <p>
+        <a href="http://eficode.fi/" class="sponsor"><img src="/sponsors/logos/eficode.png" alt="Eficode"></a>
+      </p>
+    </li>
+    <li class="next">
+      <h3>Basic sponsors</h3>
+      <p>
+        <a href="http://www.ecom.fi/" class="sponsor"><img src="/sponsors/logos/ecom.png" alt="Ecom"></a>
+      </p>
+    </li>
+    <li>
+      <h3>Partners</h3>
+      <p>
+        <a href="http://www.aucor.fi" class="sponsor"><img src="/sponsors/logos/aucor.png" alt="Aucor"></a>
+        <a href="http://turkusciencepark.com/" class="sponsor"><img src="/sponsors/logos/tscp.png" alt="Turku Science Park"></a>
+      </p>
+    </li>
+  </ul>
+  <p class="call-to-action"><a href="/sponsors/">View the full listing</a></p>
+</section>
+
+<section id="coffee" class="boxes clearfix">
+  <div class="column third">
+    <hgroup>
+      <p class="preheading">and one more thing</p>
+      <h2>The Coffee<br>
+      <span>will be amazing</span></h2>
+    </hgroup>
+    <p>This year the attendees may enjoy maybe the best coffee in Finland when our dear friends from <a href="http://www.cafeart.fi/">Café Art</a> bring their delicious beans to our lounge.</p>
+  </div>
+  <div class="column two-thirds">
+    <a href="http://www.flickr.com/photos/akisalmi/sets/72157627034870345/"><img src="/img/cafeart_wide.jpg" alt="Coffee from Café Art"></a>
+  </div>
+</section>
 <script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js" type="text/javascript"></script>
-<script>
-$(function() {
-	getTwitters('tweet', { 
-	  id: 'turkuagileday', 
-	  count: 5, 
-	  enableLinks: true, 
-	  ignoreReplies: true, 
-	  clearContents: true,
-	  template: '<a class="time" href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">%time%</a><br />%text%'
-	});
-});
-</script>

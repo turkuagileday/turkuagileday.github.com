@@ -1,6 +1,6 @@
 ---
 layout: news
-title: announcing Gold sponsor - Eficode
+title: Announcing Gold sponsor - Eficode
 author: Aki
 ---
 
