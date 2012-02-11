@@ -25,7 +25,7 @@ $(document).ready(function() {
         $activeCite = $("#cites li:first"); //go back to first
       }
       rotateCites(); //Trigger the paging and slider function
-    }, 4000); //Timer speed in milliseconds (4 seconds)
+    }, 4500); //Timer speed in milliseconds (4.5 seconds)
   };
   // Init
   rotateCitesSwitch();
