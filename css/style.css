@@ -274,7 +274,7 @@ aside { font-size: 0.75em; }
   -webkit-transition: none;  
   -moz-transition: none;  
   -ms-transition: none;  
-  -o-transition: none;  
+  -o-transition: top 0s linear;  
   transition: none;
 }
 
@@ -519,7 +519,7 @@ figure.speaker {
   -webkit-transition: none;  
   -moz-transition: none;  
   -ms-transition: none;  
-  -o-transition: none;  
+  -o-transition: top 0s linear;  
   transition: none;
 }
 
