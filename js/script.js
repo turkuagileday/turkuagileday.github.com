@@ -1,6 +1,32 @@
 $(document).ready(function() {
+  // Fixed top navigation for desktop browsers
+  if(!window.Modernizr.touch) {
+    var min = $('#navigation').offset().top;
+    $(window).scroll(function() { 
+   	  var scrollTop = $(window).scrollTop();
+    	if(scrollTop > min) {
+    	 $('#navigation').addClass('fixed');
+    	}
+      else {
+    	 $('#navigation').removeClass('fixed');
+      }
+    });
+  }
+  
+  // Because of the fixed navi, scroll back a 
+  // bit if entering with an anchor link
+  if(window.location.hash && $(window.location.hash).length > 0) {
+    var offset = $(window.location.hash).offset().top-60;
+    
+    if($.browser.safari) bodyelem = $("body")
+    else bodyelem = $("html,body");
+
+    bodyelem.scrollTop(offset);
+  }
+  
   
   // Cycling cites
+  var $activeCite, $nextCite;
   var rotateCites = function(){
     clearTimeout(playCites); //Make sure there's no bubbling timers
     
@@ -31,6 +57,7 @@ $(document).ready(function() {
   rotateCitesSwitch();
   
   // Cycling sponsors
+  var $activeSponsor, $nextSponsor;
   var rotateSponsors = function(){
     clearTimeout(playSponsors); //Make sure there's no bubbling timers
     
@@ -61,19 +88,7 @@ $(document).ready(function() {
   rotateSponsorsSwitch();
   
   
-  // Fixed top navigation for desktop browsers
-  if(!window.Modernizr.touch) {
-    var min = $('#navigation').offset().top;
-    $(window).scroll(function() { 
-   	  var scrollTop = $(window).scrollTop();
-    	if(scrollTop > min) {
-    	 $('#navigation').addClass('fixed');
-    	}
-      else {
-    	 $('#navigation').removeClass('fixed');
-      }
-    });
-  }
+
   
   // Get tweets if front
   if($('#tweets').length > 0) {
