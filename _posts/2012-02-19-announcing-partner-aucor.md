@@ -2,7 +2,6 @@
 layout: news
 title: Announcing partner - Aucor
 author: Janne
-published: false
 ---
 
 <p><a href="http://www.aucor.fi">Aucor Oy</a> is a small and agile digital media agency based in Turku, Finland. Aucor designs high-quality Web services for B2B and corporate customers. Aucor is fully employee owned, and we all share a common enthusiasm for building perfect Web solutions.</p>
