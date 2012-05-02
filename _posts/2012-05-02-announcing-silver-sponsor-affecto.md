@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Announcing Silver sponsor - Affecto
-author: Niklas
+author: Aki
 ---
 
 [Affecto](http://affecto.fi) is the forerunner in the field of Enterprise Information Management in the Northern Europe. Our solutions for information management and business analytics help organisations to improve productivity and competitiveness with superior use of information in decision making and execution.  
