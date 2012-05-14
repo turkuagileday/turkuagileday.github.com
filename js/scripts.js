@@ -88,8 +88,6 @@ $(document).ready(function() {
   rotateSponsorsSwitch();
   
   
-
-  
   // Get tweets if front
   if($('#tweets').length > 0) {
     getTwitters('tweets', { 
@@ -102,4 +100,36 @@ $(document).ready(function() {
   	});
   }
   
+  /*if(Modernizr.mq('only screen and (max-width: 480px)')) {
+    // Rotate some table cells if mobile
+    $( '.topic' ).each( function() {
+      $(this).html( '<div>' + $(this).html() + '<\/div>' );
+    });
+    
+    $( '.topic > div' ).css({
+      'position':          'relative',
+      'margin':            '0',
+      'padding':           '0',
+      'white-space':       'nowrap',
+      '-webkit-transform': 'rotate(90deg)', // chrome+safari
+      '-ms-transform':     'rotate(90deg)', // IE
+      '-moz-transform':    'rotate(90deg)', // firefox
+      '-o-transform':      'rotate(90deg)', // opera
+      'transform':         'rotate(90deg)'  // CSS 3
+    });
+    
+    $('.topic > div').each( function() {
+      var t = $(this);
+      var w = t.width();
+      t.css( 'min-width', w );
+      
+      t.parent().height( w );
+      t.parent().css({
+        'max-width': t.height(),
+      });
+      
+      t.css( 'left', -1 * w/2 + t.parent().width()/2 );
+      t.css( 'top', w/2 - t.height()/2);
+    });
+  }*/
 });
