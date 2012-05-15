@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TAD012 Tweet Stream</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="shortcut icon" href="/favicon.ico"> 
+<link  href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold" rel="stylesheet" type="text/css" >
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<style>
+    * {	margin:0px;padding:0px; }
+    
+    body {
+        background: #000; color: #fff;
+        font: 17px/1.5 'Droid Sans', sans-serif;
+    }
+    a { color:#f4bc19;}
+    a img {	border:0px; }
+    
+    .hidden { display: none; height: 0px;}
+    
+    #twitter_results {
+    	width:700px;
+    	margin: 20px auto;
+    }
+    
+    .tweet {clear: both; }
+    .tweeter { float: left; text-align: right; width: 100px; overflow: hidden; }
+    .tweeter a { color: #fff; font-size: 14px; text-decoration: none; display: inline-block;  line-height: 0;}
+    .tweeter a img { border: 3px solid #fff; }
+    
+    .tweet_bubble {
+    	margin: 0 0 20px 135px;;
+    	border: 3px solid #fff;
+    	padding: 10px;
+    	min-height: 45px;
+    	position: relative;
+    	
+    	-moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    	-webkit-border-top-left-radius: 10px;
+    	border-radius: 10px;
+        border-top-left-radius: 10px;
+        
+    }
+    
+    /* creates the bigger  triangle */
+    .tweet_bubble:before {
+        content:"";
+        display:block; /* reduce the damage in FF3.0 */
+        position:absolute;
+        width:0;
+        height:0;
+        
+        top:5px; /* controls vertical position */
+        left:-30px; /* value = - border-left-width - border-right-width */
+        bottom:auto;
+        border-width:10px 30px 10px 0;
+        border-style:solid;
+        border-color:transparent #fff;
+    }
+    
+    /* creates the smaller  triangle */
+    .tweet_bubble:after {
+        content:"";
+        display:block; /* reduce the damage in FF3.0 */
+        position:absolute;
+        width:0;
+        height:0;
+        
+        top:9px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+        left:-21px; /* value = - border-left-width - border-right-width */
+    
+        border-width:6px 21px 6px 0;
+        border-style:solid;
+        border-color:transparent #000;
+    }
+</style>
+</head>
+
+<body>
+
+<div id='twitter_results'></div>
+	
+<script type="text/javascript">
+	$("document").ready(function() {
+	    tag = (urlp('tag') != '') ? urlp('tag') : 'tad100 OR tad012 OR turkuagileday';
+    	load_tweets();
+    	setInterval(load_tweets, 10000);
+    	setInterval(show_one_new_tweet, 500);
+    	
+    	if(urlp('hide_scrollbar') == 'true') $('body').css('overflow', 'hidden');
+    });
+
+    function load_tweets() {
+    	var last_ID = $(".tweet_bubble:first").attr("id");
+    	
+    	if (last_ID) {
+    		last_ID = parseInt(last_ID.replace("tweet", "")) + 100;
+    		var url = "http://search.twitter.com/search.json?q=" + tag + "&since_id=" + last_ID + "&callback=?";
+    	} else {
+    		var url = "http://search.twitter.com/search.json?q=" + tag + "&rpp=10&callback=?"; 
+    	}
+    	
+    	$.getJSON(url, function(json) { 
+    	    results = '';
+    		$(json.results).each(function() {
+    			if (this.id == undefined) return;
+    			results += "<div class='tweet hidden'><div class='tweeter'><a href='http://twitter.com/" + this.from_user + "'><img width='32' height='32' alt='" + this.from_user + " on Twitter' src='" + this.profile_image_url + "' /></a><br><a href='http://twitter.com/" + this.from_user + "'>" + this.from_user + "</a></div><p class='tweet_bubble' id='tweet" + this.id + "'>" + linkify(this.text) + "</p></div>";
+    		});
+    		$("#twitter_results").prepend(results);
+    	});
+    
+    	$(".tweet:gt(20)").remove();
+    }
+    
+    function show_one_new_tweet() {
+        $('.tweet.hidden:last')
+            .animate({height: '100%'}, 300)
+            .fadeIn('slow', function() { $(this).removeClass('hidden')});
+    }
+    
+    function linkify(text) {
+        // modified from TwitterGitter by David Walsh (davidwalsh.name)
+        // courtesy of Jeremy Parrish (rrish.org)
+        return text.replace(/(https?:\/\/[\w\-:;?&=+.%#\/]+)/gi, '<a href="$1">$1</a>')
+                   .replace(/(^|\W)@(\w+)/g, '$1<a href="http://twitter.com/$2">@$2</a>')
+                   .replace(/(^|\W)#(\w+)/g, '$1#<a href="http://search.twitter.com/search?q=%23$2">$2</a>');
+    }
+    
+    function urlp(name) {
+      name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+      var regexS = "[\\?&]"+name+"=([^&#]*)";
+      var regex = new RegExp( regexS );
+      var results = regex.exec( window.location.href );
+      if( results == null )
+        return "";
+      else
+        return results[1];
+    }
+
+</script>
+</body>
+</html>
