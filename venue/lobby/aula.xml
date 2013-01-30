@@ -1,6 +1,6 @@
 <krpano version="1.0.8.14">
 	
-	<view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="1.0" fovmax="120" limitview="auto" />
+	<view hlookat="90" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="1.0" fovmax="120" limitview="auto" />
 
 	<preview url="aula.tiles/preview.jpg" />
 
