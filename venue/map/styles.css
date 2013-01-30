@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+}
+
+.map_container {
+	position: absolute;
+	width: 75%;
+	height: 100%;
+	overflow: hidden;
+}
