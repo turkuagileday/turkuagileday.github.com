@@ -5,11 +5,11 @@ $(document).ready(function() {
 	keskiValiseina.attr({id: 'keskiValiseina',fill: 'none',stroke: '#000000',"stroke-width": '1',"stroke-linecap": 'round',"stroke-linejoin": 'round',"stroke-opacity": '1'}).data('id', 'keskiValiseina');
 	
 	var hissiA = floor1.path("m 1228,750 0,-49.98382 0,-99.01618 100,0 0,99 -100,0");
-	hissiA.attr({id: 'hissiA_line',fill: '#f1f1f1',stroke: '#000000',"stroke-width": '1',"stroke-linecap": 'round',"stroke-linejoin": 'round',"stroke-opacity": '1'}).data('id', 'hissiA');
+	hissiA.attr({id: 'hissiA_line',fill: 'none',stroke: '#000000',"stroke-width": '1',"stroke-linecap": 'round',"stroke-linejoin": 'round',"stroke-opacity": '1'}).data('id', 'hissiA');
 	var hissiB = floor1.path("m 1874,850 0,-50 -50,0 0,50 z");
-	hissiB.attr({id: 'hissiB',fill: '#f1f1f1',stroke: '#000000',"stroke-width": '1',"stroke-linecap": 'round',"stroke-linejoin": 'round',"stroke-opacity": '1'}).data('id', 'hissiB');
+	hissiB.attr({id: 'hissiB',fill: 'none',stroke: '#000000',"stroke-width": '1',"stroke-linecap": 'round',"stroke-linejoin": 'round',"stroke-opacity": '1'}).data('id', 'hissiB');
 	var hissiC = floor1.path("m 3017,800 50,0 0,50 -50,0 z");
-	hissiC.attr({id: 'hissiC',fill: '#f1f1f1',stroke: '#000000',"stroke-width": '1',"stroke-linecap": 'round',"stroke-linejoin": 'round',"stroke-opacity": '1'}).data('id', 'hissiC');
+	hissiC.attr({id: 'hissiC',fill: 'none',stroke: '#000000',"stroke-width": '1',"stroke-linecap": 'round',"stroke-linejoin": 'round',"stroke-opacity": '1'}).data('id', 'hissiC');
 	var delta = floor1.path("m 2520,1247 149,0 0,348 -248,0 0,-348 0,-99 99,0 0,99");
 	delta.attr({id: 'delta',fill: 'none',stroke: '#000000',"stroke-width": '1',"stroke-linecap": 'round',"stroke-linejoin": 'round',"stroke-opacity": '1',"fill-opacity": '1'}).data('id', 'delta');
 
@@ -31,58 +31,62 @@ $(document).ready(function() {
 
 
 	var hall_fill = "#afa";
-	var hall_stroke = "2";
+	var hall_stroke = "1";
 
 	var alpha = floor1.path("m 2470,5 -447,0.5 0,645.5 447,0 z");
 	alpha.attr({id: 'alpha',fill: hall_fill,"fill-opacity": '1',stroke: '#000000',"stroke-width": hall_stroke,"stroke-linecap": 'round',"stroke-linejoin": 'round',"stroke-opacity": '1'}).data('id', 'alpha');
 	var beta = floor1.path("m 1228.25,1148 447,0 0,99 -99.25,0 0,348 -347.75,0 z");
-	beta.attr({id: 'beta',fill: hall_fill,stroke: '#000000',"stroke-width": hall_stroke,"stroke-linecap": 'round',"stroke-linejoin": 'round',"stroke-opacity": '1'}).data('id', 'beta');
+	beta.attr({id: 'beta',fill: hall_fill, "fill-opacity": '1', stroke: '#000000',"stroke-width": hall_stroke,"stroke-linecap": 'round',"stroke-linejoin": 'round',"stroke-opacity": '1'}).data('id', 'beta');
 	var lambda = floor1.path("m 3265,1147.8486 -198,0.1514 0,-50 -100,0 0,497 298,-0.3806 z");
 	lambda.attr({id: 'lambda',fill: hall_fill,stroke: '#000000',"stroke-width": hall_stroke,"stroke-linecap": 'round',"stroke-linejoin": 'round',"stroke-opacity": '1',"fill-opacity": '1',"stroke-miterlimit": '4',"stroke-dasharray": 'none'}).data('id', 'lambda');
 
-	var halls = [alpha, beta, lambda];
-	$.each(halls, function(i, element) {
-		element.hover(function () {
-			element.animate({transform: "s1.05"}, 50);
+	var halls = [];
+	halls.push({element: alpha, name: "Alpha", info: "Management track & keynotes."});
+	halls.push({element: beta, name: "Beta", info:  "Development track."});
+	halls.push({element: lambda, name: "Lambda", info:  "Human resources track."});
+	
+	/*$.each(halls, function(i, hall) {
+		hall.element.hover(function () {
+			hall.element.animate({"transform": "s1.05"}, 500, "elastic");
 		},
 		function () {
-			element.animate({transform: "s1"}, 50);
+			hall.element.animate({"transform": "s1"}, 500, "elastic");
 			}
 		);
+		
+		hall.element.click(function() {
+			setInfo(hall.element, hall.name, hall.info);
+		});
+	});*/
+
+	var panoramas = [];
+	panoramas.push({"id": "cam1", x: 1050, y: 750, "link": "http://turkuagileday.fi/venue/lobby"});
+	panoramas.push({"id": "cam2", x: 2100, y: 750, "link": "http://turkuagileday.fi/venue/alpha"});
+	
+	$.each(panoramas, function(i, camera){
+		camera.element = addCamera(floor1, camera.id, camera.x, camera.y, camera.link);
 	});
 	
 	var sponsors = [];
-	var sponsor_types = {};
 	
-	sponsor_types.premium = {radius: "100", color: "#f55"};
-	sponsor_types.gold = {radius: "50", color: "#f1f155"};
-	sponsor_types.silver = {radius: "40", color: "#f1f1f1"};
-	sponsor_types.basic = {radius: "10", color: "#5555f1"};
+	sponsors.push({type: "Premium", x: 2240, y: 650, start: 180, end: 360, desc: "seliteteksti", info: "Special location for the one and only Premium level sponsor"});
 	
-	sponsors.push({type: "premium", x: 2240, y: 650, start: 180, end: 360, desc: "seliteteksti"});
+	sponsors.push({type: "Gold", x: 2420, y: 750, start: 90, end: 360, info: ""});
+	sponsors.push({type: "Gold", x: 2420, y: 850, start: 0, end: 270, info: ""});
+	sponsors.push({type: "Gold", x: 2270, y: 850, start: -30, end: 210, info: ""});
 	
-	sponsors.push({type: "gold", x: 2420, y: 750, start: 90, end: 360});
-	sponsors.push({type: "gold", x: 2420, y: 850, start: 0, end: 270});
-	sponsors.push({type: "gold", x: 2250, y: 850, start: 0, end: 180});
+	sponsors.push({type: "Silver", x: 2530, y: 750, start: 180, end: 360, info: ""});
+	sponsors.push({type: "Silver", x: 2630, y: 750, start: 180, end: 360, info: ""});
 	
-	sponsors.push({type: "silver", x: 2530, y: 750, start: 180, end: 360});
-	sponsors.push({type: "silver", x: 2630, y: 750, start: 180, end: 360});
+	sponsors.push({type: "Silver", x: 2530, y: 850, start: 0, end: 180, info: ""});
+	sponsors.push({type: "Silver", x: 2800, y: 850, start: 0, end: 180, info: ""});
 	
-	sponsors.push({type: "silver", x: 2530, y: 850, start: 0, end: 180});
-	sponsors.push({type: "silver", x: 2800, y: 850, start: 0, end: 180});
-	
-	sponsors.push({type: "silver", x: 3015, y: 825, start: 90, end: 270});
+	sponsors.push({type: "Silver", x: 3020, y: 825, start: 90, end: 270, info: ""});
 	
 	$.each(sponsors, function(i, data) {
-		
-		var element = sector(floor1, data.x, data.y, sponsor_types[data.type].radius, data.start, data.end, {fill: sponsor_types[data.type].color});
-		element.hover(function () {
-			element.animate({transform: "s1.2"}, 50);
-		},
-		function () {
-			element.animate({transform: "s1"}, 50);
-			}
-		);
+		data.element = addSponsorSpot(floor1, data);
 	});
+	
+	
 
 });
