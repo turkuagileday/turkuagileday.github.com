@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // Fixed top navigation for desktop browsers
-  if(!window.Modernizr.touch) {
+  if(!window.Modernizr.touch && $('#navigation').offset() !== null) {
     var min = $('#navigation').offset().top;
     $(window).scroll(function() { 
    	  var scrollTop = $(window).scrollTop();
