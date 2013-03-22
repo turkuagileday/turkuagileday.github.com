@@ -4,6 +4,6 @@ navigation:
   - title : "Speakers"
     url   : "/speakers/index.html"
   - title : "Topics"
-	url   : "speakers/index.html"
+	url   : "/speakers/index.html"
   - title : "Past"
     url   : "/past/index.html"
