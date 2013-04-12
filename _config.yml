@@ -5,6 +5,8 @@ navigation:
     url   : "/speakers/index.html"
   - title : "Topics"
     url   : "/topics/index.html"
+  - title : "Schedule"
+    url   : "/schedule/index.html"
   - title : "Registration"
     url   : "https://registration.turkuagileday.fi/"
   - title : "Venue"
