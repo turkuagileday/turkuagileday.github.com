@@ -4,7 +4,7 @@ title: First sponsors and partners announced!
 author: Timo
 ---
 
-We have just published the first of our sponsors and partners for this year! Check them out at http://turkuagileday.fi/sponsors/
+We have just published the first of our sponsors and partners for this year! Check them out at <a href="http://turkuagileday.fi/sponsors/">http://turkuagileday.fi/sponsors/</a>
 
 They are to be thanked very much for making our event possible!
 
