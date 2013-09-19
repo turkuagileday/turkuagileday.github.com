@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.map_container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#sideInfo {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-top: 1px solid #DDDDDD;
+    bottom: 0;
+    box-shadow: 0 0 8px -2px;
+    display: none;
+    min-height: 20%;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.info_container h2 {
+	margin-left: 2em;
+}
+
+.info_container article {
+	margin-left: 1em;
+}
+
+#panoramaBox {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background: #777;
+	background: rgba(0,0,0,0.5);
+	cursor: pointer;
+    display: none;
+}
+
+#panoramaBox iframe {
+    position: absolute;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    border: 10px solid #222;
+    border-radius: 4px;
+    background: #222;
+}
+
+.close {
+	color: white;
+	font-weight: bolder;
+	font-family: sans;
+	font-size: 12pt;
+	margin: 0.25em;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+}
+
+.close:hover {
+	top: 0.05em;
+}
+
+#sideInfo a.close {
+	color: #333;
+}

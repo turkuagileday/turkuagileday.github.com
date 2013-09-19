@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+Sponsors - Turku Agile Day
+</title>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/media/css/reset.css" />
+    <link rel="stylesheet" href="/media/css/text.css" />
+    <link rel="stylesheet" href="/media/css/960.css" />
+
+    <link  href="//fonts.googleapis.com/css?family=Droid+Sans:regular,bold" rel="stylesheet" type="text/css" >
+
+    <link rel="stylesheet" href="/media/css/tad011.css">
+    <link rel="shortcut icon" href="/favicon2.png">
+
+
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header class="container_24">
+        <div class="grid_7">
+          <a href="/">
+            <img src="/media/layout_img/tad011_logo2.png" alt="Turku Agile Day 011"/></a>
+        </div>
+        <div class="grid_17">
+          <hgroup>
+            <h1>Turku Agile Day</h1>
+            <!--<h2>agile software development conference<br/><strong>March 16<sup>th</sup> &ndash; 17<sup>th</sup> 2011</strong></h2>-->
+          </hgroup>
+
+          
+          <nav class="corners10 glow-border">
+            <ul>
+              <li class="news"><a href="/"><span>News</span><br/>Latest buzz</a></li>
+              <li class="conference"><a href="/programme/"><span>Programme</span><br/>Schedule, Speakers, Venue</a></li>
+              <li class="past"><a href="/past/"><span>Past</span><br/>Previous years</a></li>
+              <li class="tad-sponsors"><a href="/sponsors/"><span>Sponsors</span><br/>Our supporters</a></li>
+              <li class="enroll"><a href="http://register.turkuagileday.fi/"><span>Register</span><br/>Enroll now!</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+        <div class="clear"></div>
+      </header>
+
+      <div id="content" class="container_24">
+        
+
+
+
+<section class="grid_24">
+  <nav class="sub corners10 glow-border" style="width: 60%;">
+    <ul>
+      
+      
+      <li>
+        <a href="/past/"><span>Past</span></a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/past/2010/"><span>2010</span></a>
+      </li>
+      
+      <li>
+        <a href="/past/2009/"><span>2009</span></a>
+      </li>
+      
+      <li>
+        <a href="/past/2011/"><span>2011</span></a>
+      </li>
+      
+    </ul>
+  </nav>
+</section>
+
+
+
+<section class="grid_24">
+<h1>Gold Sponsors</h1>
+<p><a href="http://eficode.fi"><img alt="Eficode logo" src="/media/img/eficode.png" /></a>
+<a href="http://www.lindorff.fi"><img alt="Lindorff logo" src="/media/img/lindorff.jpg" /></a>
+<a href="http://www.reaktor.fi/"><img src="/media/img/reaktor_big.jpg" border="0" alt="Reaktor" height="55" /></a>
+<a href="http://tieto.fi"><img alt="Tieto logo" src="/media/img/tieto.png" /></a></p>
+<h2>Silver Sponsors</h2>
+<p><a href="http://confluence.agilefinland.com/display/af/Home"><img alt="Agile Finland logo" src="/media/img/agilefinland.gif" /></a>
+<a href="http://ailos.fi"><img alt="Ailos logo" src="/media/img/ailos.jpg" /></a>
+<a href="http://www.ixonos.com"><img alt="Ixonos logo" src="/media/img/ixonos_logo.png" /></a>
+<a href="http://louhekon.fi"><img alt="Louhekon logo" src="/media/img/louhekon.png" /></a>
+<a href="http://agile42.com"><img alt="Agile42 logo" src="/media/img/agile42.png" /></a></p>
+<h3>Basic Sponsors</h3>
+<p><a href="http://www.turkusciencepark.com/"><img alt="TScP logo" src="/media/img/tscp.gif" /></a>
+<a href="http://www.scrumalliance.org"><img alt="Scrum Alliance logo" src="/media/img/scrum_logo.png" /></a></p>
+<h1>Supporting partners</h1>
+<p><a href="http://www.agilealliance.org"><img alt="Agile Alliance logo" src="/media/img/agile-alliance.png" /></a>
+<a href="http://www.tek.fi/"><img alt="TEK logo" src="/media/img/tek.gif" /></a>
+<a href="http://teejotain.fi"><img alt="TSOY logo" src="/media/img/tsoylogo.png" /></a></p>
+<p>Want to be our sponsor? <a href="mailto:info@turkuagileday.fi">Contact us!</a></p>
+</section>
+<div class="clear"></div> 
+
+      </div>
+    </div>
+
+    <footer class="container_24">
+      <section id="contact-info" class="grid_8">
+        <h4>Contact information</h4>
+        <ul>
+          <li><a href="mailto:info@turkuagileday.fi">info@turkuagileday.fi</a></li>
+          <li><span>Aki Salmi, phone: +358 50 364 7187</span></li>
+          <li><span>Jyrki Pulliainen, phone: +358 40 570 2293</span></li>
+          <li><a href="/staff/">Who's behind Turku Agile Day?</a></li>
+        </ul>
+      </section>
+
+      <section id="utulogo" class="grid_8 push_1">
+        <a href="http://www.utu.fi/"><img src="/media/img/utu.png" alt="University of Turku"></a>
+      </section>
+
+      <section id="organizers" class="grid_7 push_1">
+        <h4>Organizers</h4>
+        <ul>
+          <li><a href="http://www.it.utu.fi/">Department of Information Technology</a></li>
+          <li><a href="http://www.asteriski.fi/">Asteriski ry</a></li>
+          <li><a href="http://www.digit.fi/">Digit ry</a></li>
+        </ul>
+      </section>
+      <div class="clear"></div>
+    </footer>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11098970-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

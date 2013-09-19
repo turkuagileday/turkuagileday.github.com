@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+Workshops - Turku Agile Day
+</title>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/media/css/reset.css" />
+    <link rel="stylesheet" href="/media/css/text.css" />
+    <link rel="stylesheet" href="/media/css/960.css" />
+
+    <link  href="//fonts.googleapis.com/css?family=Droid+Sans:regular,bold" rel="stylesheet" type="text/css" >
+
+    <link rel="stylesheet" href="/media/css/tad011.css">
+    <link rel="shortcut icon" href="/favicon2.png">
+
+
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header class="container_24">
+        <div class="grid_7">
+          <a href="/">
+            <img src="/media/layout_img/tad011_logo2.png" alt="Turku Agile Day 011"/></a>
+        </div>
+        <div class="grid_17">
+          <hgroup>
+            <h1>Turku Agile Day</h1>
+            <!--<h2>agile software development conference<br/><strong>March 16<sup>th</sup> &ndash; 17<sup>th</sup> 2011</strong></h2>-->
+          </hgroup>
+
+          
+          <nav class="corners10 glow-border">
+            <ul>
+              <li class="news"><a href="/"><span>News</span><br/>Latest buzz</a></li>
+              <li class="conference"><a href="/programme/"><span>Programme</span><br/>Schedule, Speakers, Venue</a></li>
+              <li class="past"><a href="/past/"><span>Past</span><br/>Previous years</a></li>
+              <li class="tad-sponsors"><a href="/sponsors/"><span>Sponsors</span><br/>Our supporters</a></li>
+              <li class="enroll"><a href="http://register.turkuagileday.fi/"><span>Register</span><br/>Enroll now!</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+        <div class="clear"></div>
+      </header>
+
+      <div id="content" class="container_24">
+        
+
+
+
+<section class="grid_24">
+  <nav class="sub corners10 glow-border" style="width: 60%;">
+    <ul>
+      
+      
+      <li>
+        <a href="/past/"><span>Past</span></a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/past/2010/"><span>2010</span></a>
+      </li>
+      
+      <li>
+        <a href="/past/2009/"><span>2009</span></a>
+      </li>
+      
+      <li>
+        <a href="/past/2011/"><span>2011</span></a>
+      </li>
+      
+    </ul>
+  </nav>
+</section>
+
+
+
+<section class="grid_24">
+<p><a name="agile-management"/>
+<div class="odd"></p>
+<h2>Agile Management</h2>
+<p><em>Agile management</em> is an often overlooked part of Agile. There is much information available for agile developers, testers, and project managers, but very little for <em>development managers</em> and <em>team leaders</em>. However, when organizations adopt agile software development, not only developers, testers, and project managers need to learn new practices. Development managers and team leaders must also learn a new approach to <strong>leading and managing agile organizations</strong>.</p>
+<p>Several studies indicate that “old-style” <em>managers are the biggest obstacle in transitions to agile software development</em>. Development managers and team leaders need to learn what their new role is in agile software development organizations. This workshop will help them.</p>
+</div>
+
+<p><a name="agile-testing-journey"/>
+<div class="even"></p>
+<h2>Agile Testing Journey</h2>
+<p>Effective testing should be an integrated part of agile development. Various agile testing practices, such as ATDD, TDD, and exploratory testing, have been introduced. In practice it's not clear how to combine these effectively. Agile testing requires various skills and has to be done in parallel with development. Right balance between information, cost and feedback time is needed to achieve this. In this workshop we explore the testing activities required to get the feature done. We try in practice defining specifications by example, test automation and exploratory testing. We also look into how to improve based on the information gotten from testing.</p>
+<p>This workshop consists of exercises and group discussions. We will do ATDD session, implement automated tests and have exploratory testing session. </p>
+<p>Learning goals:</p>
+<ul>
+<li>How to do effective testing by combining different practices</li>
+<li>Costs and risks involved with different practices</li>
+<li>Selecting suitable testing approaches for different problems</li>
+<li>How to improve based on the information received from testing</li>
+<li>Overall view of agile testing</li>
+</ul>
+<p>Intended audience and pre-requisites:</p>
+<p>Understanding of ATDD (Acceptance Test Driven Development) and exploratory testing. No need to master in practice, but should be familiar with the concept.
+Should have seen code before and implemented Hello World with some language. No need to be a developer.
+Intended for those who would consider themselves as agile team members (eg. developers, testers, business analysts).
+</div></p>
+<p><a name="agile-testing-self-help-clinic"/>
+<div class="odd"></p>
+<h2>Agile Testing Self-Help Clinic</h2>
+<p>According to Merriam-Webster, "clinic" is, with one of its meanings, a group meeting devoted to the analysis and solution of concrete problems or to the acquiring of specific skills or knowledge. This is what we do in this workshop - we analyze and solve problems in testing and take home better skills to helping ourselves solving those problems in our specific organizations. </p>
+<p>We will reserve time for your addressing the participants needs, but will start with some common problems and work with exercises towards their solution, e.g.:</p>
+<ul>
+<li>How do you test incrementally, when you're used to test when the system is almost ready?</li>
+<li>What do you need to cover for a "story" to test it sufficiently? </li>
+<li>If full automation is not possible, how to work with regression testing?</li>
+</ul>
+</div>
+
+<p><a name="executable-specifications"/>
+<div class="even"></p>
+<h2>Executable Specifications</h2>
+<p>Elisabet Hendricksson stated at Turku Agile Day 2010 that “Specs is an abbreviation for speculations”. She is right, specs are normally speculations. How can this be avoided?</p>
+<p>The execution of code doesn't leave any room for speculations. So if the spec can be executed, it isn't a speculation anymore.</p>
+<p>Specifications can be expressed in many different ways. One popular form is as Word documents. Word documents are hard to execute, they need to be interpreted and the intent is probably lost, or at least changed, in the translation.</p>
+<p>It would be nice to remove the risk of misinterpretation and the risk of losing the intend in the translation. This can only be done if no interpretation takes place and no translation is done. The solution is obviously to create the specifications so they can be executed.</p>
+<p>We will look at the pros and cons of some different tools in this tutorial. They will include tools suited for developers that wants to write code to tools suited for product owners that don't. We will also use some of them. You will leave this tutorial with a working knowledge about executable specifications and you will know that you can set up and execute a specification.</p>
+<p>Tools we will look into are </p>
+<ul>
+<li>Fitnesse </li>
+<li>Robot </li>
+<li>Concordion</li>
+<li>Cucumber </li>
+<li>jBehave</li>
+<li>Tumbler</li>
+</ul>
+<p>Make sure that you bring your laptop so you are able to participate in the most important part of this hands on tutorial.
+</div></p>
+<p><a name="help-your-people-grow"/>
+<div class="odd"></p>
+<h2>Help your people GROW - Tools for leaders and coaches</h2>
+<p>Great leaders operate on two levels. While paying attention to the
+problem at hand, they never miss an opportunity to let their people
+learn from each situation. Instead of solving the problem herself, she
+might choose to build her people´s capacity to solve them. Letting
+people find solutions also encourages them to take ownership of their
+actions. An efficient way for making all this happen is to ask
+questions. The hard part is finding the right questions.</p>
+<p>During this workshop we will:</p>
+<ul>
+<li>explore how to use questions when leading and coaching teams or
+individuals</li>
+<li>learn what makes a good coaching question</li>
+<li>practice creating great questions that increase the coachees´
+awareness and helps them find solutions themselves</li>
+<li>learn a simple structure that will help you guide people with
+questions to find viable solutions and concrete actions</li>
+</ul>
+</div>
+
+<p><a name="regex-the-future-programmers-best-friend"/>
+<div class="even"></p>
+<h2>Regex - The future programmer's best friend</h2>
+<p>There are many popular myths concerning regular expressions (Regex). First,
+it's exceptionally hard to master Regex. Second, a normal programmer rarely
+needs Regex. Third, Regex are tricky to read and hence can't be maintained.</p>
+<p>That is all wrong!</p>
+<p>IDG media recently listed what knowledge will be most requested in our
+business ten years from now. In first place was Analyzing data. They
+explain: "Around 35 new petabyte data will be created every year after 2020.
+That's comparable to a DVD stack from earth to the moon and back again." Do
+you want to be one of the requested experts?</p>
+<p>Regex is based on a very simple mathematical theory. With just three plain
+operators – AND, OR and star – we can describe all state machines (FA) and
+catch almost any text pattern. The rest is supplementary. Many programmers
+first studied and then practiced Java, C#, Ruby or Python for years. But,
+how much time did we spend on learning and writing Regex?</p>
+<p>Java, C#, Ruby and Python are a strongly typed languages with excellent
+support for object orientation. However, data from files, user input, and
+databases are often untyped. Regex instantly and elegantly translates the
+untyped data into typed data. We can easily find, interpret, replace, and
+filter. Regex is seamlessly integrated as an external DSL. And, we can even
+test drive Regex development with xUnit.</p>
+<p>No prior Regex knowledge is required for this very practical session. Expect
+live coding and mini exercises, when Staffan reveals the secrets. Maybe it
+wasn't that hard to understand Regex? Maybe Regex can be maintained when we
+automate testing? Maybe there is a need for Regex in every single program?</p>
+<p>Staffan gives you the answers.</p>
+</div>
+
+<p><a name="new-tools-of-the-craft"/>
+<div class="odd"></p>
+<h2>New Tools of the Craft</h2>
+<h3>An exploration of necessary tools for effective collaboration in agile teams.</h3>
+<p>Getting value through an iterative and incremental process with a high level of uncertainty and a dependence on early and quality feedback requires more than just a task board, some cards and a secret handshake.</p>
+<p>The promise of agility in teams and organizations requires changes in attitude, values, beliefs and behaviors. These changes need new tools that are by no means commonplace in the general world of business and are rarer still in the software domain.</p>
+<p>In this session, Mike Sutton and Pierluigi Pugliese will take participants through an immersive experience centered around a real Agile project using Scrum. As they work towards building a potentially shippable product, participants will experience, first hand, some of the most common dysfunctions in agile implementations.</p>
+<p>Mike and Pierluigi will help participants learn some interesting techniques to help correct these dysfunctions and facilitate follow up discussions to unpack the motivations and mechanics of such techniques to help them gain deeper understanding.</p>
+<p>Borrowing and adapting from such schools of knowledge and practice ranging from Systemic coaching, Solutions Focused, Theatre Improvisation, Clowning and Open Space Technology, Mike and Pierluigi will invite the participants to experience techniques that can change the value they get from being in a team, their work and transform the value they bring to their organizations.</p>
+</div>
+
+<p><a name="reclaim-your-legacy-systems"/>
+<div class="even"></p>
+<h2>Reclaim your legacy systems - A deeper dive with the Mikado Method</h2>
+<p>For any code base there comes a time when you want to change it. If your changes are extensive, it’s easy to get lost in a jungle of dependencies, or on a sea of broken code. Ultimately, you might just give up and stove it away under the legacy label.</p>
+<p>Instead, come learn The Mikado Method (<a href="http://mikadomethod.wordpress.com">http://mikadomethod.wordpress.com</a>), a systematic approach to reclaim your code. It helps you visualize, prepare and perform business-value- focused changes, while delivering, and without having a broken code-base in the process. It enhances team communication, collaboration and learning, and helps individuals stay on track.</p>
+<p><strong>Intended audience:</strong></p>
+<p>Anyone who wants to get some serious hands-on practice on how to work their way out of messy code while keeping the delivery frequency and business-value focus.</p>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Previous experience of ill-structured code </li>
+<li>Intermediate Java or C# development skills </li>
+<li>Some experience with ‘classic’ refactorings </li>
+<li>Some knowledge of design principles (SOLID/Low coupling-High cohesion). </li>
+<li>Laptop with development environment for Java. The kata is also available in C#.
+</div></li>
+</ul>
+<p><a name="the-hitchhikers-guide-to-agile"/>
+<div class="even"></p>
+<h2>Student workshop: The (hitch)hiker's guide to agile</h2>
+<p>You, me and a group of others are in the Kilpisjärvi Hiking Center. We are about to start a week-long hiking trip to the summit of Halti, the highest point of Finland. We have a vision - to enjoy the hike and to get back safe. Plans are updated regularly and the route, while well known and planned, might vary just like in any software project.</p>
+<p>In this workshop-like tutorial we together will start a journey to learn the basics of agile. Do we get all the way to Halti, or do we rather go fishing on DoskalJávri?</p>
+<p>It's your choice.</p>
+<p>Just remember, Don't Panic.
+</div></p>
+</section>
+<div class="clear"></div> 
+
+      </div>
+    </div>
+
+    <footer class="container_24">
+      <section id="contact-info" class="grid_8">
+        <h4>Contact information</h4>
+        <ul>
+          <li><a href="mailto:info@turkuagileday.fi">info@turkuagileday.fi</a></li>
+          <li><span>Aki Salmi, phone: +358 50 364 7187</span></li>
+          <li><span>Jyrki Pulliainen, phone: +358 40 570 2293</span></li>
+          <li><a href="/staff/">Who's behind Turku Agile Day?</a></li>
+        </ul>
+      </section>
+
+      <section id="utulogo" class="grid_8 push_1">
+        <a href="http://www.utu.fi/"><img src="/media/img/utu.png" alt="University of Turku"></a>
+      </section>
+
+      <section id="organizers" class="grid_7 push_1">
+        <h4>Organizers</h4>
+        <ul>
+          <li><a href="http://www.it.utu.fi/">Department of Information Technology</a></li>
+          <li><a href="http://www.asteriski.fi/">Asteriski ry</a></li>
+          <li><a href="http://www.digit.fi/">Digit ry</a></li>
+        </ul>
+      </section>
+      <div class="clear"></div>
+    </footer>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11098970-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

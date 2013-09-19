@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Turku Agile Day 2013: Venue</title>
+		<script src="jquery.min.js" type="text/javascript"></script>
+		<script src="raphael.min.js" type="text/javascript"></script>
+		<script src="helpers.js" type="text/javascript"></script>
+		
+		<script src="venue_floor1.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+		function resizeMap() {
+			var div_w = $("#floor_1").width();
+			var div_h = $("#floor_1").height();
+			
+			var scale_w = 3600/div_w;
+			var scale_h = 1600/div_h;
+			
+			floor1.setViewBox(0, 0, scale_w*3600, scale_h*1600);
+		}
+		
+		$(document).ready(function() {
+			resizeMap();
+			$(window).resize(function() {
+				resizeMap();
+			});
+		});
+		
+		</script>
+		
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		<div id="floor_1" class="map_container"></div>
+		<div id="sideInfo" class="info_container">
+			<h2></h2>
+			<a class="close">Close</a>
+			<article></article>
+		</div>
+	</body>
+</html>
