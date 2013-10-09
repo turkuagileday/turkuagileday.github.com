@@ -1,35 +1,48 @@
 $(document).ready(function() {
+  var loadTweets = function() {
+    $.get('http://turku-agile-day-mooch.herokuapp.com/1.1/statuses/user_timeline.json?screen_name=TurkuAgileDay').then(function(tweets) {
+      $('#tweets').html("");
+      $.each(tweets, function(i, tweet) {
+        if (i < 5) {
+          var tweetText = '<p>' + tweet.text + '<br><a class="posted-on" href="http://twitter.com/' + tweet.user.screen_name + '/statuses/' + tweet.id_str + '">' + XDate(tweet.created_at).toString("d MMMM yyyy") +'</a></p>';
+          $('#tweets').append(tweetText);
+        }
+      });
+    }).fail(function() {
+      $('#tweets').html("<h4>Oh no... unable to fetch tweets :(</h4>");
+    });
+  };
   // Fixed top navigation for desktop browsers
   if(!window.Modernizr.touch && $('#navigation').offset() !== null) {
     var min = $('#navigation').offset().top;
-    $(window).scroll(function() { 
-   	  var scrollTop = $(window).scrollTop();
-    	if(scrollTop > min) {
-    	 $('#navigation').addClass('fixed');
-    	}
+    $(window).scroll(function() {
+      var scrollTop = $(window).scrollTop();
+      if(scrollTop > min) {
+        $('#navigation').addClass('fixed');
+      }
       else {
-    	 $('#navigation').removeClass('fixed');
+        $('#navigation').removeClass('fixed');
       }
     });
   }
-  
-  // Because of the fixed navi, scroll back a 
+
+  // Because of the fixed navi, scroll back a
   // bit if entering with an anchor link
   if(window.location.hash && $(window.location.hash).length > 0) {
     var offset = $(window.location.hash).offset().top-60;
-    
-    if($.browser.safari) bodyelem = $("body")
+
+    if($.browser.safari) bodyelem = $("body");
     else bodyelem = $("html,body");
 
     bodyelem.scrollTop(offset);
   }
-  
-  
+
+
   // Cycling cites
   var $activeCite, $nextCite;
   var rotateCites = function(){
     clearTimeout(playCites); //Make sure there's no bubbling timers
-    
+
     $("#cites li").removeClass("active"); //Remove all active class
     $activeCite.addClass("active").removeClass('next'); //Add active class (the $active is declared in the rotateSwitch function)
     // Set next ready
@@ -55,12 +68,12 @@ $(document).ready(function() {
   };
   // Init
   rotateCitesSwitch();
-  
+
   // Cycling sponsors
   var $activeSponsor, $nextSponsor;
   var rotateSponsors = function(){
     clearTimeout(playSponsors); //Make sure there's no bubbling timers
-    
+
     $("#sponsor-groups li").removeClass("active"); //Remove all active class
     $activeSponsor.addClass("active").removeClass('next'); //Add active class (the $active is declared in the rotateSwitch function)
     // Set next ready
@@ -86,50 +99,9 @@ $(document).ready(function() {
   };
   // Init
   rotateSponsorsSwitch();
-  
-  
+
   // Get tweets if front
   if($('#tweets').length > 0) {
-    getTwitters('tweets', { 
-  	  id: 'turkuagileday', 
-  	  count: 5, 
-  	  enableLinks: true, 
-  	  ignoreReplies: true, 
-  	  clearContents: true,
-  	  template: '%text% <a class="posted-on" href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">%time%</a>'
-  	});
+    loadTweets();
   }
-  
-  /*if(Modernizr.mq('only screen and (max-width: 480px)')) {
-    // Rotate some table cells if mobile
-    $( '.topic' ).each( function() {
-      $(this).html( '<div>' + $(this).html() + '<\/div>' );
-    });
-    
-    $( '.topic > div' ).css({
-      'position':          'relative',
-      'margin':            '0',
-      'padding':           '0',
-      'white-space':       'nowrap',
-      '-webkit-transform': 'rotate(90deg)', // chrome+safari
-      '-ms-transform':     'rotate(90deg)', // IE
-      '-moz-transform':    'rotate(90deg)', // firefox
-      '-o-transform':      'rotate(90deg)', // opera
-      'transform':         'rotate(90deg)'  // CSS 3
-    });
-    
-    $('.topic > div').each( function() {
-      var t = $(this);
-      var w = t.width();
-      t.css( 'min-width', w );
-      
-      t.parent().height( w );
-      t.parent().css({
-        'max-width': t.height(),
-      });
-      
-      t.css( 'left', -1 * w/2 + t.parent().width()/2 );
-      t.css( 'top', w/2 - t.height()/2);
-    });
-  }*/
 });
