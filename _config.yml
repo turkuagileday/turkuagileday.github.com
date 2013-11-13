@@ -13,3 +13,5 @@ navigation:
 #    url   : "/venue/index.html"
   - title : "Past"
     url   : "/past/index.html"
+  - title : "Call for proposals"
+    url   : "/proposals/index.html"
