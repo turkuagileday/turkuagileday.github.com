@@ -1,6 +1,6 @@
 ---
 layout: news
-title: Announcing first keynote: Bob Marshall
+title: Announcing first keynote - Bob Marshall
 author: Ville
 ---
 
