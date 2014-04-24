@@ -11,6 +11,6 @@ Some great <a href="/sponsors">sponsors and partners</a> have joined our cause a
 
 And as last year, this time around too we will be offering a free bus round-trip on the conference day for quests arriving from Helsinki and as an addition from Tampere as well. More information about that coming up shortly.
 
-Don't forget to <a href="http://registration.turkuagileday.fi">register</a> and claim your seat at the most cozy agile conference on the northern hemisphere!
+So don't forget to <a href="http://registration.turkuagileday.fi">register</a> and claim your seat at the most cozy agile conference on the northern hemisphere!
 
 See you at #tad014!
