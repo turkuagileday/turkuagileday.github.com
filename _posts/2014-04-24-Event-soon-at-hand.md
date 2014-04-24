@@ -5,7 +5,7 @@ author: Timo
 ---
 The #tad014 is here sooner than you notice! The team behind the event has been busy building the days at full steam and almost all the details start to be worked out by now.
 
-In the <a href="/schedule">schedule</a> you can still find some ToBeAnnounced's, but even those are soon gone for good. Thus we shall soon open a service for registered guests to reserve seats at the workshops to spread everyone evenly among the different tracks.
+In the <a href="/schedule">schedule</a> you can still find some missing details, but even those are soon gone for good. Thus we shall soon open a service for registered guests to reserve seats at the workshops to spread everyone evenly among the different tracks.
 
 Some great <a href="/sponsors">sponsors and partners</a> have joined our cause again, so don't forget to go check them out and give them the praise they deserve!
 
