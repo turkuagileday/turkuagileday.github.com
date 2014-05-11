@@ -210,7 +210,7 @@ aside { font-size: 0.75em; }
   overflow: hidden;
 }
   #cites ul {
-    width: 960px;
+    max-width: 960px;
     height: 233px;
     margin: 0 auto;
     padding: 0;
@@ -280,7 +280,7 @@ aside { font-size: 0.75em; }
 
 /**/
 #main {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -318,7 +318,7 @@ aside { font-size: 0.75em; }
   
 /* Grid */
 .inner {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -350,7 +350,7 @@ aside { font-size: 0.75em; }
 /* Classes */
 .boxes { margin-bottom: 3em; }
 .wrapper { overflow: hidden; }
-.inner { width: 960px; margin: 0 auto; position: relative; }
+.inner { position: relative; }
 /**/
 hgroup h2 {
   font-size: 2.25em;
@@ -621,12 +621,45 @@ figure.speaker {
    Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 480px) {
-  /* mobile layout */
-  .inner { width: 100%; }
+@media only screen and (max-width: 1000px) {
+  #main,
+  .inner {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  #logo-mini {
+    display: none;
+  }
+
+  #navigation li a {
+    padding: 0 18px;
+  }
+
+  #cites blockquote {
+    font-size: 1.75em;  
+  }
+  #cites .behind {
+    font-size: 1.125em;
+  }
+  
+  .schedule {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #main,
+  .inner {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
   .column {
     float: none;
-    width: 100% !important;
+    width: 100%;
     border-right: 0 !important;
   }
   
@@ -634,6 +667,11 @@ figure.speaker {
   #branding {
     height: auto;
     text-align: center;
+  }
+
+  #branding .inner {
+    margin-left: 0;
+    margin-right: 0;
   }
   
   #branding #logo {
@@ -656,6 +694,7 @@ figure.speaker {
   }
   
   #navigation #logo-mini {
+    display: block;
     width: 44px;
     height: 44px;
     left: auto;
@@ -719,8 +758,6 @@ figure.speaker {
     -webkit-box-sizing: border-box;
 	  -moz-box-sizing: border-box;
   	box-sizing: border-box;
-    width: 100%;
-    padding: 0 15px;
   }
   
   h1 {
