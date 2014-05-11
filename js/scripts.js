@@ -14,16 +14,30 @@ $(document).ready(function() {
   };
   // Fixed top navigation for desktop browsers
   if(!window.Modernizr.touch && $('#navigation').offset() !== null) {
-    var min = $('#navigation').offset().top;
+    var nav = $('#navigation');
+        min = nav.offset().top,
+        scrolled = false,
+        fixMenu = function() {
+          var scrollTop = $(window).scrollTop();
+          if(scrollTop > min) {
+            nav.addClass('fixed');
+          }
+          else {
+            nav.removeClass('fixed');
+          }
+        };
+    
+    setInterval(function() {
+      if (scrolled) {
+        fixMenu();
+        scrolled = false;
+      }
+    }, 50);
+        
     $(window).scroll(function() {
-      var scrollTop = $(window).scrollTop();
-      if(scrollTop > min) {
-        $('#navigation').addClass('fixed');
-      }
-      else {
-        $('#navigation').removeClass('fixed');
-      }
+      scrolled = true;
     });
+    
   }
 
   // Because of the fixed navi, scroll back a
@@ -36,6 +50,15 @@ $(document).ready(function() {
 
     bodyelem.scrollTop(offset);
   }
+
+  // Mobile hamburger nav
+  $('#logo-mini').on('click', function(e) {
+    // Visibility of the mini logo inside the link tells us when we act with narrow viewport
+    if(!$('#logo-mini img').is(':visible')) {
+      e.preventDefault();
+      $('#navigation ul').toggleClass('active');
+    }
+  });
 
 
   // Cycling cites
@@ -67,7 +90,9 @@ $(document).ready(function() {
     }, 4500); //Timer speed in milliseconds (4.5 seconds)
   };
   // Init
-  rotateCitesSwitch();
+  if($('#cites').length) {
+     rotateCitesSwitch(); 
+  }
 
   // Cycling sponsors
   var $activeSponsor, $nextSponsor;
@@ -98,7 +123,9 @@ $(document).ready(function() {
     }, 4000); //Timer speed in milliseconds (4 seconds)
   };
   // Init
-  rotateSponsorsSwitch();
+  if($("#sponsor-groups").length) {
+    rotateSponsorsSwitch();
+  }
 
   // Get tweets if front
   if($('#tweets').length > 0) {
