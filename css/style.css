@@ -704,12 +704,15 @@ figure.speaker {
     background: #003141;
   }
     #navigation #logo-mini:after {
-      content: '☰';
-      color: #fff;
-      font-size: 30px;
+      content: '';
+      display: block;
+      width: 27px;
+      height: 4px;
+      background: #fff;
       position: absolute;
       left: 9px;
-      top: 0;
+      top: 10px;
+      box-shadow: 0 10px 0 #fff, 0 20px 0 #fff;
     }
     #navigation #logo-mini img {
       display: none;
