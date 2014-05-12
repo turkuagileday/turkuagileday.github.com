@@ -761,6 +761,7 @@ figure.speaker {
     -webkit-box-sizing: border-box;
 	  -moz-box-sizing: border-box;
   	box-sizing: border-box;
+  	overflow: visible;
   }
   
   h1 {
@@ -824,11 +825,12 @@ figure.speaker {
   
   .schedule {
     font-size: 0.75em;
-    margin-left: -10px;
+    margin-left: -8px;
   }
   
   .schedule .time {
     font-size: 0.7em;
+    padding: 0.5em 0.3em 0.5em 0;
   }
   
   .schedule .topic {
